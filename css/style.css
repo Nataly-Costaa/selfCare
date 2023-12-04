@@ -1,0 +1,714 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato&family=Roboto&family=Roboto+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    height: 80vh;
+}
+
+.box {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-selfcare {
+    width: 18vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+header nav {
+    width: 30vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header a img {
+    height: 6vh;
+}
+
+.banner {
+    width: 100%;
+    height: 64vh;
+}
+
+.promocao {
+    margin: 0 3rem 0 3rem;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promocao h2 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.container {
+    height: 95vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section figure {
+    width: 25vw;
+    height: 76vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+main section figure img {
+    width: 24.7vw;
+    height: 53.5vh;
+}
+
+section figure .box-overlay-img {
+    cursor: pointer;
+    position: relative;
+}
+
+.overlay {
+    width: 24.7vw;
+    height: 0%;
+    position: absolute;
+    bottom: 0.2rem;
+    left: 0;
+    right: 0;
+    border-radius: 6px;
+    background-color: #5da7208f;
+    overflow: hidden;
+    transition: .4s ease-in-out;
+}
+
+section figure .box-overlay-img:hover .overlay {
+    height: 99%;
+    cursor: pointer;
+}
+
+section figure figcaption {
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.preco span{
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: #5CA720;
+} 
+
+section figure button {
+    margin-top: 8px;
+    width: 8.8vw;
+    height: 6.6vh;
+    background-color: #5CA720;
+    border: none;
+    border-radius: 10.2px;
+    box-shadow: 0px 2px 4px 0px #00000080;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+section figure button:hover {
+    background-color: #512200c3;
+    font-size: 1.1rem;
+    transition: 0.3s ease-in-out;
+}
+
+footer {
+    background-color: #00000008;
+}
+
+.informacoes-contatos {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.informacoes-contatos nav a{
+    display: block;
+    line-height: 1.6rem;
+    text-decoration: none;
+    color: #161616;
+    position: relative;
+}
+
+.informacoes-contatos nav a::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: #5CA720;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.informacoes-contatos nav a:hover::after {
+    color: #5CA720;
+    width: 100%;
+}
+
+footer form label {
+    margin-bottom: 1rem;
+    display: block;
+    font-weight: 600;
+}
+
+footer form input {
+    padding: 1rem;
+    width: 25vw;
+    height: 7vh;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+footer form input:focus {
+    outline: solid 1.5px #5CA720;
+}
+
+footer form button {
+    width: 10vw;
+    height: 7.1vh;
+    background-color: #5CA720;
+    font-weight: 600;
+    color: #ffffff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+footer form button:hover {
+    background-color: #512200c3;
+    font-size: 1.1rem;
+    transition: 0.3s ease-in-out;
+}
+
+footer .redes-bandeiras-cartoes {
+    padding: 3rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes-bandeiras-cartoes nav {
+    width: 6vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes-bandeiras-cartoes  nav a img:hover {
+    height: 5.3vh;
+    transition: 0.2s ease-in-out;
+}
+
+footer figure {
+    width: 15vw;
+    height: 4vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer figure img {
+    cursor:auto;
+}
+
+footer img {
+    height: 5vh;
+}
+
+@media (max-width:320px) {
+    header {
+        width: 173.3vw;
+        height: 74vh;
+    }
+
+    header .box {
+        width: 173.3vw;
+        height: 24vh;
+        justify-content: space-around;
+    }
+
+    .logo-selfcare img {
+        width: 45vw;
+        height: 7vh;
+    }
+
+    .box nav {
+        width: 60vw;
+        justify-content: space-between;
+    }
+
+    .box nav a img {
+        width: 11vw;
+        height: 6vh;
+    } 
+
+    header .banner {
+        width: 173.3vw;
+        height: 49vh;
+    }
+
+    main section {
+        width: 173.3vw;
+        height: 1250vh;
+        align-items: center;
+    }
+
+    .promocao {
+        height: 20vh;
+        line-height: 10vh;
+        text-align: center;
+    }
+
+    .promocao h2{
+        font-size: 1.5rem;
+    }
+
+    .promocao p{
+        font-size: 1.5rem;
+    }
+
+    .container {
+        margin-top: 3rem;
+        height: 395vh;
+        flex-direction: column;
+    }
+
+    main section figure {
+        line-height: 10vh;
+        width: 145vw;
+        height: 127vh;
+        line-height: 20vh;
+    }
+
+    main section figure img{
+        width: 144vw;
+        height: 89vh;
+    }
+
+    main section figure figcaption {
+        font-size: 1.5rem;
+    }
+
+    main section figure button {
+        width: 50vw;
+        height: 10vh;
+        font-size: 1.4rem;
+    }
+    main section figure button:hover {
+        font-size: 1.6rem;
+    }
+
+    .overlay {
+        width: 144vw;
+        height: 0%;
+        left: 0;
+        right: 0;
+        bottom: 2.5rem;
+    }
+
+    section figure .box-overlay-img:hover .overlay {
+        height: 91%;
+        cursor: pointer;
+    }
+
+    footer {
+        width: 173.3vw;
+    }
+
+    footer .informacoes-contatos {
+        height: 84vh;
+        display: block;
+        font-size: 1.6rem;
+    }
+
+    footer nav {
+        height: 37vh;
+    }
+    footer nav a {
+        height: 9vh;
+    }
+
+    footer .informacoes-contatos {
+        height: 95vh;
+    }
+
+    .informacoes-contatos nav a:hover::after {
+        width: 98%;
+    }
+
+    footer form {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        height: 40vh;
+    }
+
+    footer form label {
+        display: block;
+    }
+
+    footer form input {
+        width: 59vh;
+        height: 10vh;
+        font-size: 1.3rem;
+    }
+
+    footer form button {
+        width: 93vw;
+        height: 10.3vh;
+        display: block;
+        font-size: 1.4rem;
+    }
+
+    footer form button:hover {
+        font-size: 1.6rem;
+    }
+
+    footer .redes-bandeiras-cartoes nav {
+        width: 33vw;
+        height: 11vh;
+    }
+
+    footer .redes-bandeiras-cartoes nav a img {
+        width: 13vw;
+        height: 8vh;
+    }
+
+    footer .redes-bandeiras-cartoes figure{
+        width: 80vw;
+        height: 12vh;
+    }
+
+    footer .redes-bandeiras-cartoes figure img {
+        height: 6vh;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+    header {
+        height: 56vh;
+    }
+
+    .logo-selfcare {
+        width: 35vw;
+    }
+
+    .logo-selfcare img {
+        width: 30vw;
+    }
+
+    .box nav {
+        width: 45vw;
+        justify-content: space-around;
+    }
+
+    .box nav a img {
+        width: 7vw;
+        height: 5vh;
+        justify-content: space-around;
+    }
+
+    .banner {
+        height: 40vh;
+    }
+
+    main {
+        height: 770vh;
+    }
+
+    .promocao {
+        height: 20vh;
+        display: block;
+        line-height: 9vh;
+        text-align: center;
+    }
+
+    .promocao h2 {
+        font-size: 1.3rem;
+    }
+
+    .promocao p {
+        font-size: 1rem;
+    }
+
+    main section .container {
+        height: 250vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main section figure {
+        width: 80vw; 
+        height: 80vh;
+    }
+
+    main section figure img {
+        width: 79vw;
+    }
+
+    main section figure button {
+        width: 25vw;
+        height: 9vh;
+    } 
+
+    .overlay {
+        width: 79vw;
+        height: 0%;
+        left: 0;
+        right: 0;
+        bottom: 0.1rem;
+    }
+
+    footer .informacoes-contatos {
+        height: 68vh;
+        display: block;
+        font-size: 1.1rem;
+    }
+
+    footer .informacoes-contatos nav {
+        height: 30vh;
+    }
+
+    footer .informacoes-contatos form {
+        width: 80vw;
+        height: 23vh;
+    }
+
+    footer form input {
+        width: 50vw;
+        height: 10vh;
+        font-size: 0.8rem;
+    }
+    
+    footer form button {
+        width: 20vw;
+        height: 10vh;
+    }
+
+    footer .redes-bandeiras-cartoes nav {
+        width: 14vw;
+    }
+
+    footer .redes-bandeiras-cartoes figure {
+        width: 35vw;
+        height: 15vh;
+    }
+
+    footer .redes-bandeiras-cartoes figure img{
+        width: 8vw;
+        height: 4vh;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 766px) {
+    header .box figure {
+        width: 35vw;
+    }
+
+    header .box nav {
+        width: 36vw;
+    }
+    header .box nav a img {
+        height: 6vh;
+    }
+    
+    header {
+        height: 66vh;
+    }
+
+    .banner {
+        height: 50vh;
+    }
+
+    .container {
+        height: 70vh;
+    }
+
+    main section figure {
+        width: 31vw;
+        height: 60vh;
+    }
+
+    main section figure img {
+        width: 30vw;
+        height: 35vh;
+        margin-bottom: 1rem;
+    }
+
+    main section figure button {
+        width: 20vw;
+    }
+
+    .overlay {
+        width: 30vw;
+        height: 0%;
+        left: 0;
+        right: 0;
+        bottom: 1.1rem;
+    }
+
+    section figure .box-overlay-img:hover .overlay {
+        height: 90%;
+        cursor: pointer;
+    }
+
+    footer .informacoes-contatos {
+        height: 65vh;
+        display: block;
+        font-size: 1rem;
+    }
+
+    footer .informacoes-contatos nav {
+        height: 30vh;
+    }
+    
+    footer .informacoes-contatos form {
+        height: 23vh;
+    }
+
+    footer form input {
+        width: 50vw;
+        height: 10vh;
+    }
+    
+    footer form button {
+        width: 24vw;
+        height: 10vh;
+    }
+
+    footer .redes-bandeiras-cartoes nav {
+        width: 14vw;
+    }
+
+    footer .redes-bandeiras-cartoes figure {
+        width: 35vw;
+        height: 15vh;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 990px) {
+    main section figure img {
+        width: 30vw;
+    }
+
+    main section figure {
+        width: 30vw;
+    }
+
+    main section figure button {
+        width: 14vw;
+    }
+
+    .container {
+        height: 80vh;
+    }
+
+    .overlay {
+        width: 30vw;
+        height: 0%;
+        left: 0;
+        right: 0;
+        bottom: 0.2rem;
+    }
+
+    footer form input {
+        width: 28vw;
+    }
+
+    footer .redes-bandeiras-cartoes nav {
+        width: 9vw;
+    }
+
+    footer .redes-bandeiras-cartoes figure {
+        width: 28vw;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1198px) {
+    .container {
+        height: 79vh;
+    }
+
+    main section figure {
+        width: 29vw;
+    }
+
+    main section figure img {
+        width: 28.5vw;
+    }
+
+    .overlay {
+        width: 28.5vw;
+        height: 0%;
+        left: 0;
+        right: 0;
+        bottom: 0.2rem;
+    }
+
+    footer .redes-bandeiras-cartoes nav {
+        width: 8vw;
+    }
+
+    footer .redes-bandeiras-cartoes figure {
+        width: 26vw;
+    }
+}
+
+@media (min-width: 1199px) and (max-width: 1918px) {
+    main {
+        height: 250vh;
+    }
+
+    .container {
+        height: 78vh;
+    }
+
+    main section figure {
+        width: 29vw;
+        height: 72vh;
+    }
+
+    main section figure img {
+        width: 28.6vw;
+        height: 50vh;
+    }
+
+    .overlay {
+        width: 28.6vw;
+        height: 0%;
+        left: 0;
+        right: 0;
+        bottom: 0.2rem;
+    }
+
+    footer .redes-bandeiras-cartoes nav{
+        width: 8vw;
+    }
+
+    footer .redes-bandeiras-cartoes figure{
+        width: 26vw;
+    }
+}
+
