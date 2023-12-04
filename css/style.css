@@ -337,6 +337,11 @@ footer img {
     footer form button {
         width: 20vw;
         height: 10vh;
+        font-size: 0.7rem;
+    }
+
+    footer form button:hover {
+        font-size: 0.8rem;
     }
 
     footer .redes-bandeiras-cartoes nav {
@@ -441,24 +446,39 @@ footer img {
 }
 
 @media (min-width: 767px) and (max-width: 990px) {
+    header {
+        height: 55.5vh;
+    }
+
+    .box nav a img {
+        width: 4vw;
+        height: 3.4vh;
+    }
+
+    .banner {
+        height: 40vh;
+    }
+
     main section figure img {
-        width: 30vw;
+        width: 30.4vw;
+        height: 30vh;
     }
 
     main section figure {
-        width: 30vw;
+        width: 31vw;
+        height: 52vh;
     }
-
+    
     main section figure button {
         width: 14vw;
     }
-
+    
     .container {
-        height: 80vh;
+        height: 54vh;
     }
 
     .overlay {
-        width: 30vw;
+        width: 30.4vw;
         height: 0%;
         left: 0;
         right: 0;
@@ -470,11 +490,20 @@ footer img {
     }
 
     footer .redes-bandeiras-cartoes nav {
-        width: 9vw;
+        width: 15vw;
     }
-
+    
+    footer .redes-bandeiras-cartoes nav a img{
+        width: 6vw;
+        height: 4.5vh;
+    }
+    
     footer .redes-bandeiras-cartoes figure {
-        width: 28vw;
+        width: 35vw;
+    }
+    
+    footer .redes-bandeiras-cartoes figure  img{
+        width: 9vw;
     }
 }
 
