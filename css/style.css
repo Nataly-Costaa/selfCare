@@ -36,7 +36,8 @@ header nav {
 }
 
 header a img {
-    height: 6vh;
+    width: 2.9vw;
+    height: 4.9vh;
 }
 
 .banner {
@@ -224,13 +225,15 @@ footer .redes-bandeiras-cartoes {
 }
 
 footer figure {
-    width: 15vw;
+    width: 11vw;
     height: 4vh;
     display: flex;
     justify-content: space-between;
 }
 
 footer figure img {
+    width: 3.5vw;
+    height: 5.9vh;
     cursor:auto;
 }
 
@@ -248,7 +251,7 @@ footer img {
     }
 
     .logo-selfcare img {
-        width: 30vw;
+        width: 20vw;
     }
 
     .box nav {
@@ -257,7 +260,7 @@ footer img {
     }
 
     .box nav a img {
-        width: 7vw;
+        width: 5vw;
         height: 5vh;
         justify-content: space-around;
     }
@@ -267,7 +270,7 @@ footer img {
     }
 
     main {
-        height: 770vh;
+        height: 982vh;
     }
 
     .promocao {
@@ -286,18 +289,19 @@ footer img {
     }
 
     main section .container {
-        height: 250vh;
+        height: 320vh;
         flex-direction: column;
         align-items: center;
     }
 
     main section figure {
         width: 80vw; 
-        height: 80vh;
+        height: 90vh;
     }
 
     main section figure img {
         width: 79vw;
+        height: 65vh;
     }
 
     main section figure button {
@@ -354,21 +358,27 @@ footer img {
     }
 
     footer .redes-bandeiras-cartoes figure img{
-        width: 8vw;
+        width: 6vw;
         height: 4vh;
     }
 }
 
 @media (min-width: 481px) and (max-width: 766px) {
-    header .box figure {
+    header .box .logo-selfcare {
         width: 35vw;
+    }
+
+    .logo-selfcare img {
+        width: 20vw;
     }
 
     header .box nav {
         width: 36vw;
     }
+    
     header .box nav a img {
-        height: 6vh;
+        width: 5vw;
+        height: 5vh;
     }
     
     header {
@@ -443,6 +453,10 @@ footer img {
         width: 35vw;
         height: 15vh;
     }
+
+    footer .redes-bandeiras-cartoes figure img {
+        width: 5.4vw;
+    }
 }
 
 @media (min-width: 767px) and (max-width: 990px) {
@@ -450,23 +464,35 @@ footer img {
         height: 55.5vh;
     }
 
+    .logo-selfcare {
+        width: 28vw;
+    }
+
+    .logo-selfcare img {
+        width: 14vw;
+    }
+
     .box nav a img {
-        width: 4vw;
-        height: 3.4vh;
+        width: 3.5vw;
+        height: 5.2vh;
     }
 
     .banner {
         height: 40vh;
     }
 
+    main {
+        height: 216vh;
+    }
+
     main section figure img {
         width: 30.4vw;
-        height: 30vh;
+        height: 38vh;
     }
 
     main section figure {
         width: 31vw;
-        height: 52vh;
+        height: 61vh;
     }
     
     main section figure button {
@@ -474,7 +500,7 @@ footer img {
     }
     
     .container {
-        height: 54vh;
+        height: 67vh;
     }
 
     .overlay {
@@ -494,34 +520,36 @@ footer img {
     }
     
     footer .redes-bandeiras-cartoes nav a img{
-        width: 6vw;
-        height: 4.5vh;
+        width: 4vw;
+        height: 5.5vh;
     }
     
     footer .redes-bandeiras-cartoes figure {
         width: 35vw;
     }
     
-    footer .redes-bandeiras-cartoes figure  img{
-        width: 9vw;
+    footer .redes-bandeiras-cartoes figure img{
+        width: 4.3vw;
     }
 }
 
 @media (min-width: 991px) and (max-width: 1198px) {
     .container {
-        height: 79vh;
+        height: 74vh;
     }
 
     main section figure {
-        width: 29vw;
+        width: 30vw;
+        height: 63vh;
     }
 
     main section figure img {
-        width: 28.5vw;
+        width: 29.5vw;
+        height: 42vh;
     }
 
     .overlay {
-        width: 28.5vw;
+        width: 29.5vw;
         height: 0%;
         left: 0;
         right: 0;
@@ -529,11 +557,15 @@ footer img {
     }
 
     footer .redes-bandeiras-cartoes nav {
-        width: 8vw;
+        width: 12vw;
     }
 
     footer .redes-bandeiras-cartoes figure {
         width: 26vw;
+    }
+
+    footer .redes-bandeiras-cartoes figure img{
+        width: 4vw;
     }
 }
 
